@@ -1,11 +1,13 @@
-import About from "../components/About/About"
-import Banner from "../components/Banner/Banner"
-import Header from "../components/Header/Header"
+import About from "../components/About/About";
+import Banner from "../components/Banner/Banner";
+import Header from "../components/Header/Header";
+import Location from "../components/Location/Location";
+import Property from "../components/Property/Property";
 // import Navbar from "../components/Navbar/Navbar"
 
-
-
-import { AboutData } from "../utils/constant/About"
+import { AboutData } from "../utils/constant/About";
+import { LocationData } from "../utils/constant/Location";
+import { PropertyData } from "../utils/constant/Property";
 
 const Home = () => {
   return (
@@ -13,10 +15,28 @@ const Home = () => {
       <Header />
       {/* <Navbar /> */}
 
-      <Banner /> 
-      <About data={AboutData} /> 
-    </div>
-  )
-}
+      <Banner />
+      <About data={AboutData} />
 
-export default Home
+      <div className="property">
+        <h1>Most Popular Hotel</h1>
+        <div className="property-box">
+          {PropertyData.map((item, index) => {
+            return <Property key={index} data={item} />;
+          })}
+        </div>
+      </div>
+
+      <div className="location">
+        <h1>Most Popular Destination</h1>
+        <div className="location-box">
+          {LocationData.map((item, index) => {
+            return <Location key={index} data={item} />;
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
