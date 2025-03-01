@@ -1,11 +1,12 @@
 import About from "../components/About/About";
 import Banner from "../components/Banner/Banner";
+import Download from "../components/Download/Download";
 import Header from "../components/Header/Header";
 import Location from "../components/Location/Location";
 import Property from "../components/Property/Property";
-// import Navbar from "../components/Navbar/Navbar"
 
 import { AboutData } from "../utils/constant/About";
+import { DownloadData } from "../utils/constant/Download";
 import { LocationData } from "../utils/constant/Location";
 import { PropertyData } from "../utils/constant/Property";
 
@@ -13,7 +14,6 @@ const Home = () => {
   return (
     <div>
       <Header />
-      {/* <Navbar /> */}
 
       <Banner />
       <About data={AboutData} />
@@ -35,6 +35,8 @@ const Home = () => {
           })}
         </div>
       </div>
+
+      <Download data={DownloadData} />
     </div>
   );
 };
