@@ -1,0 +1,140 @@
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    width: 23%;
+    min-width: 250px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .icon:hover {
+    background: #28a745;
+    color: #fff;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #28a745;
+  }
+  
+  .recent-post {
+    margin-bottom: 10px;
+  }
+  
+  .recent-post p {
+    font-size: 14px;
+  }
+  
+  .recent-post span {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  .recent-post i {
+    margin-right: 5px;
+  }
+  
+  .newsletter input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .newsletter button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .newsletter button:hover {
+    background: #218838;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  

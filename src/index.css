@@ -58,3 +58,26 @@
     align-items: center;
     padding: 30px 0;
 }
+
+.work-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work{
+    background-color: #eeeeee;
+    color: #333;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.work h1{
+    font-size: 50px;
+    padding: 10px 0;
+}
+
+.client-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
